@@ -1,0 +1,10 @@
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="us,us"
+XKBVARIANT=",dvorak"
+XKBOPTIONS="grp:alt_caps_toggle"
+
+BACKSPACE="guess"
