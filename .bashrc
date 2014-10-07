@@ -136,3 +136,5 @@ alias ack='ack-grep'
 
 alias asdf='setxkbmap -rules evdev -model pc104 -layout "us" -variant "dvorak" -option "grp:alt_caps_toggle"'
 
+alias reset='echo -ne \\033c'
+
