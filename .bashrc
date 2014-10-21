@@ -138,3 +138,5 @@ alias asdf='setxkbmap -rules evdev -model pc104 -layout "us" -variant "dvorak" -
 
 alias reset='echo -ne \\033c'
 
+alias androidfox='adb forward tcp:6000 localfilesystem:/data/data/org.mozilla.firefox/firefox-debugger-socket'
+
