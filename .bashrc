@@ -125,6 +125,8 @@ fi
 
 export EDITOR=nano
 
+# Workaround for libreoffice bug that causes xmonad to spin.
+export SAL_USE_VCLPLUGIN=gen
 
 alias sts='ssh -l ubuntu -i ~/.ssh/sts-keypair.pem'
 
