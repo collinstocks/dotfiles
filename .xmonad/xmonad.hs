@@ -75,7 +75,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
     , ((0, 0x1008ff17), spawn "dbus-send --print-reply --dest=net.kevinmehall.Pithos /net/kevinmehall/Pithos net.kevinmehall.Pithos.SkipSong")
     , ((0, 0x1008ff81), spawn "pithos")
     , ((mod4Mask, xK_F2), spawn "bash -lc $'source ~/.bashrc; command=$(compgen -ac | sort -u | dmenu -nb \"#000\" -nf \"#fff\" -sb \"#fff\" -sf \"#000\") && ($command || xmessage \"Error: \\\"$command\\\" returned exit status $?\")' ")
-    , ((mod4Mask, xK_Escape), spawn "xscreensaver-command -l")
+    , ((mod4Mask, xK_Escape), spawn "cinnamon-screensaver-command -l")
     , ((mod4Mask, xK_Caps_Lock), spawn "setxkbmap -rules evdev -model pc104 -layout 'us,us' -variant ',dvorak' -option 'grp:alt_caps_toggle'")
     ]
   ++ [((m .|. modm, k), windows $ f i)

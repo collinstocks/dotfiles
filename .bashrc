@@ -125,6 +125,8 @@ fi
 
 export EDITOR=nano
 
+# Workaround for libreoffice bug that causes xmonad to spin.
+export SAL_USE_VCLPLUGIN=gen
 
 alias sts='ssh -l ubuntu -i ~/.ssh/sts-keypair.pem'
 
@@ -135,4 +137,8 @@ alias ie8="wine 'C:\Program Files\Internet Explorer\iexplore'"
 alias ack='ack-grep'
 
 alias asdf='setxkbmap -rules evdev -model pc104 -layout "us" -variant "dvorak" -option "grp:alt_caps_toggle"'
+
+alias reset='echo -ne \\033c'
+
+alias androidfox='adb forward tcp:6000 localfilesystem:/data/data/org.mozilla.firefox/firefox-debugger-socket'
 
