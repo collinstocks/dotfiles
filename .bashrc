@@ -127,6 +127,8 @@ export EDITOR=nano
 
 export STS_ENVIRONMENT=development
 
+export NODE_PATH=NODE_PATH:/usr/local/lib/node_modules/
+
 # Workaround for libreoffice bug that causes xmonad to spin.
 export SAL_USE_VCLPLUGIN=gen
 
