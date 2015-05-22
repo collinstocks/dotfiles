@@ -51,6 +51,7 @@ main = do
   killtrayer <- spawnPipe "killall trayer"
   trayer <- spawnPipe "sleep 0.1 && trayer --edge top --align right --widthtype request --height 14 --SetDockType true --SetPartialStrut true --monitor 1"
   xscreensaver <- spawnPipe "xscreensaver -no-splash"
+  screenoff <- spawnPipe "~/shell_scripts/screenoff.sh"
   background <- spawnPipe "nitrogen --set-zoom-fill ~/Pictures/collection/dnb_united_states_lrg.jpg"
   gsettings <- spawnPipe "gnome-settings-daemon"
   keyboard <- spawnPipe "sleep 0.5 && setxkbmap -rules evdev -model pc104 -layout 'us,us' -variant ',dvorak' -option 'grp:alt_caps_toggle'"
