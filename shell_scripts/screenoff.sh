@@ -2,7 +2,7 @@
 
 while true
 do
-    sleep 60
+    sleep 120
     case "$(cinnamon-screensaver-command -q | egrep -o '\bactive\b|\binactive\b')" in
         "active")
             echo "active"
