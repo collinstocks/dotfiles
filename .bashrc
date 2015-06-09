@@ -129,6 +129,8 @@ export LESS="-RS"
 
 export STS_ENVIRONMENT=development
 
+export PYTHONDONTWRITEBYTECODE=1
+
 export NODE_PATH=NODE_PATH:/usr/local/lib/node_modules/
 
 # Workaround for libreoffice bug that causes xmonad to spin.
