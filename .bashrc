@@ -65,12 +65,14 @@ function parse_git_branch {
 git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 
+PS1=$BASH_INDENT
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]-\[\033[1;31m\]$(date +%Y%m%d)\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;33m\]$(parse_git_branch)\[\033[00m\]\$ '
+    PS1+='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]-\[\033[1;31m\]$(date +%Y%m%d)\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;33m\]$(parse_git_branch)\[\033[00m\]\$ '
 else
-    PS1=':${debian_chroot:+($debian_chroot)}\u@\h-$(date +%Y%m%d):\w$(parse_git_branch)\$ '
+    PS1+=':${debian_chroot:+($debian_chroot)}\u@\h-$(date +%Y%m%d):\w$(parse_git_branch)\$ '
 fi
 unset color_prompt force_color_prompt
+export BASH_INDENT="$BASH_INDENT>"
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
