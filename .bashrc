@@ -154,3 +154,5 @@ alias androidfox='adb forward tcp:6000 localfilesystem:/data/data/org.mozilla.fi
 
 alias termchrome=$'kill $(ps -A | grep [Cc]hrome | awk \'{ print $1 }\')'
 alias killchrome=$'kill -9 $(ps -A | grep [Cc]hrome | awk \'{ print $1 }\')'
+
+alias gitroot='cd "$(git rev-parse --show-toplevel)"'
