@@ -15,14 +15,14 @@
 	<entry name="word_chars" mtime="1397602256" type="string">
 		<stringvalue>-A-Za-z0-9,./?%&amp;#:_=+@~</stringvalue>
 	</entry>
-	<entry name="palette" mtime="1438959555" type="string">
+	<entry name="palette" mtime="1441371501" type="string">
 		<stringvalue>#000000000000:#CDCB00000000:#0000CDCB0000:#CDCBCDCB0000:#1E1A908FFFFF:#CDCB0000CDCB:#0000CDCBCDCB:#E5E2E5E2E5E2:#4CCC4CCC4CCC:#FFFF00000000:#0000FFFF0000:#FFFFFFFF0000:#46458281B4AE:#FFFF0000FFFF:#0000FFFFFFFF:#FFFFFFFFFFFF</stringvalue>
 	</entry>
 	<entry name="default_size_rows" mtime="1397602256" type="int" value="24"/>
 	<entry name="title" mtime="1397602256" type="string">
 		<stringvalue>Terminal</stringvalue>
 	</entry>
-	<entry name="use_theme_colors" mtime="1438959555" type="bool" value="false"/>
+	<entry name="use_theme_colors" mtime="1441371501" type="bool" value="false"/>
 	<entry name="cursor_blink_mode" mtime="1397602256" type="string">
 		<stringvalue>system</stringvalue>
 	</entry>
@@ -30,8 +30,8 @@
 		<stringvalue>close</stringvalue>
 	</entry>
 	<entry name="scrollback_lines" mtime="1397602256" type="int" value="512"/>
-	<entry name="scrollback_unlimited" mtime="1438959555" type="bool" value="true"/>
-	<entry name="visible_name" mtime="1438959555" type="string">
+	<entry name="scrollback_unlimited" mtime="1441371501" type="bool" value="true"/>
+	<entry name="visible_name" mtime="1441371501" type="string">
 		<stringvalue>Unlimited</stringvalue>
 	</entry>
 	<entry name="silent_bell" mtime="1397602256" type="bool" value="false"/>
@@ -46,7 +46,7 @@
 	<entry name="use_custom_default_size" mtime="1397602256" type="bool" value="false"/>
 	<entry name="default_show_menubar" mtime="1397602256" type="bool" value="true"/>
 	<entry name="bold_color_same_as_fg" mtime="1397602256" type="bool" value="true"/>
-	<entry name="background_color" mtime="1438959555" type="string">
+	<entry name="background_color" mtime="1441371501" type="string">
 		<stringvalue>#340D00000000</stringvalue>
 	</entry>
 	<entry name="allow_bold" mtime="1397602256" type="bool" value="true"/>
@@ -56,14 +56,14 @@
 	<entry name="title_mode" mtime="1397602256" type="string">
 		<stringvalue>replace</stringvalue>
 	</entry>
-	<entry name="bold_color" mtime="1438959555" type="string">
+	<entry name="bold_color" mtime="1441371501" type="string">
 		<stringvalue>#000000000000</stringvalue>
 	</entry>
 	<entry name="scroll_on_output" mtime="1397602256" type="bool" value="false"/>
 	<entry name="scroll_background" mtime="1397602256" type="bool" value="true"/>
 	<entry name="update_records" mtime="1397602256" type="bool" value="true"/>
 	<entry name="login_shell" mtime="1397602256" type="bool" value="false"/>
-	<entry name="foreground_color" mtime="1438959555" type="string">
+	<entry name="foreground_color" mtime="1441371501" type="string">
 		<stringvalue>#FFFFFFFFFFFF</stringvalue>
 	</entry>
 	<entry name="background_darkness" mtime="1397602256" type="float" value="0.5"/>
