@@ -129,7 +129,7 @@ export EDITOR=nano
 export PAGER="less -RS"
 export LESS="-RS"
 
-export STS_ENVIRONMENT=development
+export STS_FLAVOR=dev
 
 export PYTHONDONTWRITEBYTECODE=1
 
