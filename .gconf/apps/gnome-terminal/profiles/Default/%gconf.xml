@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="scrollback_lines" mtime="1447440681" type="int" value="10000"/>
 	<entry name="background_type" mtime="1441371501" type="string">
 		<stringvalue>transparent</stringvalue>
 	</entry>
