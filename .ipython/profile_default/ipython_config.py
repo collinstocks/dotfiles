@@ -94,7 +94,10 @@ c.TerminalIPythonApp.exec_lines = [
     '''
 def rreload (module, reloaded=None):
     """Recursively reload modules."""
-    reload(module)
+    try:
+        reload(module)
+    except Exception:
+        print 'Error reloading:\n\t{}'.format(repr(module))
     reloaded = reloaded or set()
     reloaded.add(module)
     for attribute_name in dir(module):
