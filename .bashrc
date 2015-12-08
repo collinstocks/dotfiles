@@ -130,6 +130,7 @@ export PAGER="less -RS"
 export LESS="-RS"
 
 export STS_FLAVOR=dev
+export DYNAMODB_LOCAL=1
 
 export PYTHONDONTWRITEBYTECODE=1
 
