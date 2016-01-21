@@ -150,7 +150,7 @@ alias ack='ack-grep'
 
 alias asdf='setxkbmap -rules evdev -model pc104 -layout "us" -variant "dvorak" -option "grp:alt_caps_toggle"'
 
-alias reset='stty sane && echo -ne \\033c'
+alias reset='stty sane && tput reset'
 
 alias androidfox='adb forward tcp:6000 localfilesystem:/data/data/org.mozilla.firefox/firefox-debugger-socket'
 
