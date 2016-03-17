@@ -1,0 +1,26 @@
+#!/bin/bash
+
+trap ctrl_c INT
+
+function ctrl_c () {
+    echo "*** Killing everything ***"
+    PGID=$(ps -o pgid= $$ | grep -o [0-9]*)
+    setsid kill -- -$PGID
+    exit 1
+}
+
+XDISPLAY=":$RANDOM"
+
+Xephyr -ac -screen 1280x800 "$XDISPLAY" &
+XPID=$!
+sleep 0.1
+
+DISPLAY=$XDISPLAY metacity &
+MPID=$!
+
+DISPLAY=$XDISPLAY "$@"
+
+kill $MPID
+kill $XPID
+kill -9 $MPID
+kill -9 $XPID

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-DISPLAY=":$RANDOM"
-
-Xnest -geometry 1280x800+0+0 "$DISPLAY" &
-
-DISPLAY=$DISPLAY metacity &
-
-DISPLAY=$DISPLAY "$@"
