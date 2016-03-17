@@ -11,7 +11,7 @@ function ctrl_c () {
 
 XDISPLAY=":$RANDOM"
 
-Xephyr -ac -screen 1280x800 "$XDISPLAY" >/dev/null 2>&1 &
+Xephyr -ac -screen 1280x960 "$XDISPLAY" >/dev/null 2>&1 &
 XPID=$!
 sleep 0.1
 
