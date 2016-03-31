@@ -13,7 +13,7 @@ XDISPLAY=":$RANDOM"
 
 Xephyr -ac -screen 1280x960 "$XDISPLAY" >/dev/null 2>&1 &
 XPID=$!
-sleep 0.1
+sleep 0.2
 
 DISPLAY=$XDISPLAY metacity >/dev/null 2>&1 &
 MPID=$!
