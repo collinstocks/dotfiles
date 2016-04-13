@@ -131,7 +131,7 @@ export LESS="-RS"
 
 export STS_FLAVOR=dev
 export TEST_BROWSER=firefox
-export DYNAMODB_LOCAL=1
+#export DYNAMODB_LOCAL=1
 
 export PYTHONDONTWRITEBYTECODE=1
 
