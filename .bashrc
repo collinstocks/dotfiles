@@ -1,4 +1,21 @@
 #!/bin/bash
+
+# If the current load average is greater than 10, do not customize the prompt.
+# Some of the prompt customizations run other programs, and if the load is
+# too high, we may never get a prompt in that case.
+# Note: The following is done entirely with bash commands, without executing
+# any additional processes.
+# Read the first number from /proc/loadavg. Handle the following cases:
+#  - Stop at the dot. We get an integer.
+#  - The dot is missing. Stop after 5 characters, splitting on space. We
+#    get an integer.
+#  - The load average is greater than five digits. We get some five-digit
+#    integer that is certainly greater than 10.
+read -d . -n 5 LOAD_1m IGNORED </proc/loadavg
+(("$LOAD_1m" > 10)) && return
+unset LOAD_1m
+unset IGNORED
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
