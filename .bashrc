@@ -154,6 +154,8 @@ export PYTHONDONTWRITEBYTECODE=1
 
 export NODE_PATH=NODE_PATH:/usr/local/lib/node_modules/
 
+source ~/bin/emsdk_portable/emsdk_env.sh >/dev/null 2>&1
+
 # Workaround for libreoffice bug that causes xmonad to spin.
 export SAL_USE_VCLPLUGIN=gen
 
