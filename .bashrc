@@ -142,6 +142,20 @@ if ! shopt -oq posix; then
 fi
 
 
+# Modify the PATH:
+path_append_if_exists () {
+    if [ -d "$1" ] ; then
+        export PATH="$PATH:$1"
+    fi
+    "${@:2}"
+}
+
+path_append_if_exists /opt/android-studio/bin
+path_append_if_exists /opt/jdk1.8.0_102/bin export JAVA_HOME=/opt/jdk1.8.0_102
+
+
+# Exports and aliases:
+
 export EDITOR=nano
 export PAGER="less -RS"
 export LESS="-RS"
