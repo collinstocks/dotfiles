@@ -142,42 +142,12 @@ if ! shopt -oq posix; then
 fi
 
 
-# Modify the PATH:
-path_append_if_exists () {
-    if [ -d "$1" ] ; then
-        export PATH="$PATH:$1"
-    fi
-    "${@:2}"
-}
-
-path_append_if_exists /opt/android-studio/bin
-path_append_if_exists /opt/jdk1.8.0_102/bin export JAVA_HOME=/opt/jdk1.8.0_102
+source .env
 
 
-# Exports and aliases:
-
-export EDITOR=nano
-export PAGER="less -RS"
-export LESS="-RS"
-
-export STS_FLAVOR=dev
-#export TEST_BROWSER=firefox
-#export DYNAMODB_LOCAL=1
-
-export PYTHONDONTWRITEBYTECODE=1
-
-export NODE_PATH=NODE_PATH:/usr/local/lib/node_modules/
-
-source ~/bin/emsdk_portable/emsdk_env.sh >/dev/null 2>&1
-
-# Workaround for libreoffice bug that causes xmonad to spin.
-export SAL_USE_VCLPLUGIN=gen
+# Aliases:
 
 alias sts='ssh -l ubuntu -i ~/.ssh/sts-keypair.pem'
-
-export WINEARCH=win32
-alias ie8="wine 'C:\Program Files\Internet Explorer\iexplore'"
-
 
 alias ack='ack-grep'
 
