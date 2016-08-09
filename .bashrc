@@ -142,7 +142,7 @@ if ! shopt -oq posix; then
 fi
 
 
-source .env
+source ~/.env
 
 
 # Aliases:
