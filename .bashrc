@@ -165,8 +165,8 @@ alias gr='gitroot'
 
 
 # pyenv
-if [ -d '~/.pyenv/bin' ]; then
-    export PATH="~/.pyenv/bin:$PATH"
+if [ -d "$HOME/.pyenv/bin" ]; then
+    export PATH="$HOME/.pyenv/bin:$PATH"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
