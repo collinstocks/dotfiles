@@ -90,23 +90,7 @@ c = get_config()
 # c.TerminalIPythonApp.ignore_old_config = False
 
 # lines of code to run at IPython startup.
-c.TerminalIPythonApp.exec_lines = [
-    '''
-def rreload (module, reloaded=None):
-    """Recursively reload modules."""
-    try:
-        reload(module)
-    except Exception:
-        print 'Error reloading:\\n\\t{}'.format(repr(module))
-    reloaded = reloaded or set()
-    reloaded.add(module)
-    for attribute_name in dir(module):
-        attribute = getattr(module, attribute_name)
-        if type(attribute) is __import__('types').ModuleType and attribute not in reloaded:
-            rreload(attribute, reloaded)
-    return module
-''',
-]
+# c.TerminalIPythonApp.exec_lines = []
 
 # A list of dotted module names of IPython extensions to load.
 # c.TerminalIPythonApp.extensions = []
