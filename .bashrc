@@ -162,3 +162,11 @@ alias killchrome=$'kill -9 $(ps -A | grep [Cc]hrome | awk \'{ print $1 }\')'
 
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 alias gr='gitroot'
+
+
+# pyenv
+if [ -d '~/.pyenv/bin' ]; then
+    export PATH="~/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
