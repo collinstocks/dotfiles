@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="use_menu_accelerators" mtime="1473428088" type="bool" value="false"/>
 	<entry name="default_profile" mtime="1411655376" type="string">
 		<stringvalue>Default</stringvalue>
 	</entry>
